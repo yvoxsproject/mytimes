@@ -1,23 +1,128 @@
 header {
   display: flex;
-  font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
+  font-family: Verdana;
   position: fixed;
   border-bottom: 1px solid black;
   align-items: center;
+  z-index: 5;
   width: 100%;
+  background-color: white;
 }
 
 .logo {
   display: flex;
+  flex: 1 2 50%;
   align-items: center;
+  padding-left: 20px;
+  border: 1px solid black;
 }
 
 #logo-text {
   color: MediumAquamarine;
 }
 
+.menu {
+  padding: 0px 20px;
+  width: 300px;
+}
+
 nav span {
-  display: inline-block;
+  padding: 0px 10px;
+}
+
+.columns {
+  padding-top: 30px;
+  position: relative;
+  top: 90px;
+  display: flex;
+  border: 1px solid black;
+  justify-content: center;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.column.large {
+  margin-right: 25px;
+  display: inline-flex;
+  border: 1px solid black;
+  width: 630px;
+}
+
+.column.medium {
+  display: flex;
+  border: 1px solid black;
+  width: 300px;
+  margin-right: 25px;
+}
+
+.column.small {
+  display: flex;
+  border: 1px solid black;
+  width: 240px;
+}
+
+.heading {
+  border: 1px solid black;
+  display: flex;
+}
+
+#mother {
+  background-image: url('../resources/images/img-story-main.png');
+  width: 630px;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+  height: 300px;
+}
+
+#earth {
+  background-image: url('../resources/images/img-story-2.png');
+  width: 100%;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  height: 300px;
+}
+
+#research {
+  background-image: url('../resources/images/img-story-3.png');
+  width: 100%;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  height: 300px;
+}
+
+#cat {
+  background-image: url('../resources/images/img-story-1.png');
+  width: 300px;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  height: 300px;
+}
+
+.snippets {
+  border: 3px solid black;
+  padding: 0px;
+}
+
+.small-snippet {
+  border: 1px solid black;
+}
+
+p {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
 }
